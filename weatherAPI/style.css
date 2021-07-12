@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./img/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#townInput {
+    height: 30px;
+    padding: 10px 0 10px 0;
+    margin: 0 20px 0 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 20px;
+}
+
+#townInput:focus {
+    outline-offset: 0px;
+    outline: none;
+}
+
+#submitBtn {
+    border: none;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: #ee65cf;
+}
+
+#submitBtn:hover {
+    color: #ee65cf;
+    background-color: white;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputField>form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.weatherBackground {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 550px;
+    width: 1000px;
+    background-image: url(./img/weather-background.jpg);
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.weatherContent {
+    display: flex;
+}
+
+.townInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 3px solid white;
+    border-style: inset;
+    align-items: center;
+    width: 100%;
+}
+
+.additionalWeather {
+    width: 385px;
+    height: auto;
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+.weather {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 100%;
+}
+
+.degree {
+    font-size: 85px;
+    font-weight: 800;
+    color: white;
+}
+
+.locationTimeWrap {
+    display: flex;
+    flex-flow: column;
+}
+
+.townName {
+    font-size: 50px;
+    color: white;
+}
+
+.localTime {
+    color: white;
+}
+
+.weatherText {
+    color: white;
+    font-weight: 800;
+}
+
+::placeholder {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    opacity: .6;
+}
+
+.threeDay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    color: white;
+    height: 100%;
+}
+
+.firstDay {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.secondDay {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.thirdDay {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.minMaxTemp {
+    margin: 15px 0 15px 0;
+}
+
+.vertical {
+    width: 100%;
+    opacity: .8;
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 70%, 100);
+    height: 100%;
+    width: 1px;
+    margin: 0px 20px 0px 20px;
+}
+
+hr {
+    opacity: .6;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
